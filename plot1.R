@@ -49,8 +49,9 @@ tidydata <- data[,3:10]
 write.table(tidydata, "tidydata.txt", row.name=FALSE) #write tidy data to tidydata.txt
 
 
-#### Ploting Graph #####
+#### Ploting Graph 1 #####
 png(file="plot1.png") ## Open png device; create 'plot1.png' in current working directory
 hist(tidydata$Global_active_power, col="red", main="Global Active Power", 
         ylab="Frequency", xlab="Global Active Power(kilowatts)")
 dev.off()
+
